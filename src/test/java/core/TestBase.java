@@ -38,7 +38,7 @@ public class TestBase {
     public void tearDown()
     {
 
-        //webDriver.quit();
+        webDriver.quit();
 
     }
 

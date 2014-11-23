@@ -1,13 +1,12 @@
 package ui_tests;
 
-import core.TestBase;
 import org.testng.annotations.Test;
 import pages.*;
 
 import static java.lang.Thread.sleep;
 import static org.testng.Assert.*;
 
-public class NotebooksSearchTest extends TestBase {
+public class NotebooksSearchTest extends GeneralPage {
 
     RozetkaWelcomePage1 rozetkaWelcomePage1 = new RozetkaWelcomePage1();
 
@@ -64,7 +63,8 @@ public class NotebooksSearchTest extends TestBase {
         assertEquals(applePage3.verify_K_sravneniyu1().getText(), TestData.APPLE_NOTEBOOK1 + TestData.OFFICIAL_GUARANTEE);
 
         //Click boolean check "К сравнению" for Apple MacBook Air 11" (MD712UA/A)
-        applePage3.clickCheckboxAppleNotebook2JS();
+        //applePage3.clickCheckboxAppleNotebook2JS();
+        javaScriptClick(elementIsLocated(getLocator("linkCheckboxAppleNotebook2")));
 
         //Verify that button was clicked
         //assertTrue(applePage3.clickCheckboxAppleNotebook2().isSelected());
@@ -86,7 +86,7 @@ public class NotebooksSearchTest extends TestBase {
 
     }
 
-    @Test(dependsOnMethods = {"setUpPreconditions"}, priority = 2, enabled = false)
+    @Test(dependsOnMethods = {"setUpPreconditions"}, priority = 10, enabled = false)
     public void loginIntoRozetka() throws InterruptedException {
 
         loginPage.clickAutorizationLink().click();

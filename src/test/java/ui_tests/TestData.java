@@ -24,6 +24,10 @@ public class TestData {
 
     public static final String COMPARISON_NOTEBOOKS = "Сравнение товаров";
 
+    public static final String MYVKLOGIN = "";
+
+    public static final String MYVKPASS = "";
+
     public static final String MY_FIO = "Саша Ганушевич";
 
     public static final String EMAIL = "altal@ukr.net";

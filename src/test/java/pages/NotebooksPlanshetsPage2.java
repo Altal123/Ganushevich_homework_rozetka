@@ -1,6 +1,5 @@
 package pages;
 
-import core.TestBase;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import ui_tests.TestData;
@@ -12,30 +11,25 @@ import java.util.List;
 /**
  * Created by a.ganushevich on 14.11.2014.
  */
-public class NotebooksPlanshetsPage2 extends TestBase {
-
-    //Линк на заголовок: ноутбуки, планшеты и компьютеры
-    protected By productLink = By.xpath("//td[@id='computers-notebooks']/div[@class='m-main-i active']/a[1]/span");
+public class NotebooksPlanshetsPage2 extends GeneralPage {
 
     List<WebElement> listOfManufactures;
-
-    protected WebElement productContent;
 
     public WebElement verifyProductContent(){
 
         Log4Test.info("Verify that the page is Ноутбуки and tab Ноутбуки, планшеты и компьютеры in active condition");
-        return productContent = webDriver.findElement(productLink);
+        return elementIsLocated(getLocator("linkTitleNotebooks"));
 
     }
 
     public int verifyQuantityOfManufacturers(){
 
         //коллекция производителей ноутбуков
-        listOfManufactures = webDriver.findElements(By.xpath(".//*[@id='head_banner_container']/div[4]/div/div/div[2]/div[3]/ul/li[2]/ul/li"));
+        listOfManufactures = webDriver.findElements(getLocator("linkOfAllmanufacturers"));
 
         int quantity = 0;
 
-        for(WebElement link : listOfManufactures){
+        for(WebElement l : listOfManufactures){
 
             quantity++;
 
@@ -63,7 +57,6 @@ public class NotebooksPlanshetsPage2 extends TestBase {
             }
         }
         Log4Test.info("Verify exists right Apple link");
-        //не забыть добавить проверку что appleLink != null.
         return appleLink;
     }
 
