@@ -20,7 +20,7 @@ public class TestData {
 
     public static final String APPLE_NOTEBOOK1 = "Apple MacBook Pro Retina 15\" (Z0PU002JE)";
 
-    public static final String APPLE_NOTEBOOK2 = "Apple MacBook Air 11\" (MD712UA/A)";
+    public static final String APPLE_NOTEBOOK2 = "Apple MacBook Air 13\" (Z0NZ002H6)";
 
     public static final String COMPARISON_NOTEBOOKS = "Сравнение товаров";
 
