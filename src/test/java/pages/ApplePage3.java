@@ -24,11 +24,11 @@ public class ApplePage3 extends TestBase {
 
     protected By linkAppleNotebook1 = By.xpath(".//div[@class='gtile-i-title']/a[contains(text(),'Z0PU002JE')]");
 
-    protected By linkAppleNotebook2 = By.xpath(".//div[@class='gtile-i-title']/a[contains(text(),'MD712UA/A')]");
+    protected By linkAppleNotebook2 = By.xpath(".//div[@class='gtile-i-title']/a[contains(text(),'Z0NZ002H6')]");
 
     protected By linkCheckboxAppleNotebook1 = By.xpath(".//div[@class='gtile-i-title']/a[contains(text(),'Z0PU002JE')]/../../div[5]/div[1]/label/input");
 
-    protected By linkCheckboxAppleNotebook2 = By.xpath(".//div[@class='gtile-i-title']/a[contains(text(),'MD712UA/A')]/../../div[5]/div[1]/label/input");
+    protected By linkCheckboxAppleNotebook2 = By.xpath(".//div[@class='gtile-i-title']/a[contains(text(),'Z0NZ002H6')]/../../div[5]/div[1]/label/input");
 
     protected By link_K_sravneniyu1 = By.xpath(".//div[@class='c-right']/div/div/div/div/ul/li[1]/a[2]");
 
