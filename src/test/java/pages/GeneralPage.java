@@ -25,6 +25,15 @@ public class GeneralPage extends TestBase {
         }
     }
 
+    protected boolean elementIsSelected(By element)
+    {
+        try {
+            return wait.until(ExpectedConditions.elementToBeSelected(element));
+        } catch (StaleElementReferenceException e){
+            return wait.until(ExpectedConditions.elementToBeSelected(element));
+        }
+    }
+
     public void waitForPageLoaded()
 
     {

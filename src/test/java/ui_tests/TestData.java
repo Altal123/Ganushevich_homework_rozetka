@@ -30,7 +30,7 @@ public class TestData {
 
     public static final String MY_FIO = "Саша Ганушевич";
 
-    public static final String EMAIL = "altal@ukr.net";
+    public static final String EMAIL = "";
 
 
 }

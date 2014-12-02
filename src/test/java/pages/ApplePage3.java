@@ -49,9 +49,14 @@ public class ApplePage3 extends GeneralPage {
 
     public WebElement clickCheckboxAppleNotebook1(){
 
-        Log4Test.info("Verify correct click on checkbox next to the Apple Notebook1");
+        Log4Test.info("Click on checkbox beside the Apple Notebook1");
         return elementIsLocated(getLocator("linkCheckboxAppleNotebook1"));
 
+    }
+
+    public boolean verifyCheckboxAppleNotebook1WasClicked(){
+        Log4Test.info("Verification that checkbox beside the Apple Notebook1 was clicked");
+        return elementIsSelected(getLocator("linkClickedCheckboxAppleNotebook1"));
     }
 
     public WebElement verify_K_sravneniyu1() {
@@ -63,8 +68,13 @@ public class ApplePage3 extends GeneralPage {
 
     public WebElement clickCheckboxAppleNotebook2(){
 
-        Log4Test.info("Verify correct click on checkbox next to the Apple Notebook2");
+        Log4Test.info("Click on checkbox beside the Apple Notebook2");
         return elementIsLocated(getLocator("linkCheckboxAppleNotebook2"));
+    }
+
+    public boolean verifyCheckboxAppleNotebook2WasClicked(){
+        Log4Test.info("Verification that checkbox beside the Apple Notebook2 was clicked");
+        return elementIsSelected(getLocator("linkClickedCheckboxAppleNotebook2"));
     }
 
     public WebElement verify_K_sravneniyu2() {

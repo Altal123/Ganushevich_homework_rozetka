@@ -27,7 +27,7 @@ public class TestBase {
 
         webDriver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 
-        webDriver.manage().timeouts().pageLoadTimeout(30, TimeUnit.SECONDS);
+        webDriver.manage().timeouts().pageLoadTimeout(30, TimeUnit.SECONDS);//working only in Firefox and IE
 
         webDriver.manage().timeouts().setScriptTimeout(30, TimeUnit.SECONDS);
 

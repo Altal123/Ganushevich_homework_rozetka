@@ -56,8 +56,8 @@ public class NotebooksSearchTest extends GeneralPage {
         //Click boolean check "К сравнению" for Apple MacBook Pro Retina 15" (Z0PU002JE)
         applePage3.clickCheckboxAppleNotebook1().click();
 
-        //Verify that button was clicked
-        //assertTrue(applePage3.clickCheckboxAppleNotebook1().isSelected());
+        //Verification that checkbox beside the Apple Notebook1 was clicked
+        assertTrue(applePage3.verifyCheckboxAppleNotebook1WasClicked());
 
         //Verify that appears "Cписок сравнения:" on the right side of the page.
         assertEquals(applePage3.verify_K_sravneniyu1().getText(), TestData.APPLE_NOTEBOOK1 + TestData.OFFICIAL_GUARANTEE);
@@ -66,8 +66,8 @@ public class NotebooksSearchTest extends GeneralPage {
         //applePage3.clickCheckboxAppleNotebook2JS();
         javaScriptClick(elementIsLocated(getLocator("linkCheckboxAppleNotebook2")));
 
-        //Verify that button was clicked
-        //assertTrue(applePage3.clickCheckboxAppleNotebook2().isSelected());
+        //Verification that checkbox beside the Apple Notebook2 was clicked
+        assertTrue(applePage3.verifyCheckboxAppleNotebook2WasClicked());
 
         //Verify that appeared "Cписок сравнения:" with contains   Apple_notebook1 и Apple_notebook2
         assertEquals(applePage3.verify_K_sravneniyu1().getText(), TestData.APPLE_NOTEBOOK1 + TestData.OFFICIAL_GUARANTEE);
